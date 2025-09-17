@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+      .container {
+        display: grid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 1000px;
+        height: 800px;
+        gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 50px;
+      }
+
+      .box-1 {
+        padding: 20px;
+        background-color: hsl(31, 66%, 93%);
+
+        grid-row-start: 1;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 10px;
+      }
+      .box-2 {
+        background-color: hsl(39, 100%, 71%);
+        grid-row-start: 7;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 10px;
+      }
+      .box-3 {
+        background-color: hsl(256, 67%, 59%);
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        border-radius: 10px;
+      }
+
+      .box-4 {
+        background-color: hsl(31, 66%, 93%);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        border-radius: 10px;
+      }
+      .box-5 {
+        background-color: hsl(39, 100%, 71%);
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        border-radius: 10px;
+      }
+      .box-6 {
+        background-color: hsl(256, 67%, 59%);
+        grid-column-start: 5;
+        grid-column-end: 11;
+        grid-row-start: 9;
+        grid-row-end: 12;
+        border-radius: 10px;
+      }
+      .box-7 {
+        background-color: hsl(31, 66%, 93%);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        grid-row-end: 12;
+        border-radius: 10px;
+      }
+      .box-8 {
+        background-color: hsl(254, 88%, 90%);
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 9;
+        border-radius: 10px;
+      }
+
+      .create {
+        width: 170px;
+        height: 80px;
+        margin-top: 0px;
+      }
+      .text {
+        font-size: 35px;
+      }
+      .purple {
+        color: hsl(256, 67%, 59%);
+        margin-top: 1px;
+      }
+      .box-3 {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .text-3 {
+        font-size: 50px;
+        color: white;
+      }
+      .yellow {
+        color: hsl(39, 100%, 71%);
+      }
+      .gray {
+        color: hsl(254, 88%, 90%);
+      }
+      .stars {
+        margin-top: 20px;
+        width: 250px;
+        height: 40px;
+      }
+      .text-2 {
+        font-size: 30px;
+      }
+      .ai {
+        width: 180px;
+        height: 180px;
+        margin-top: 25px;
+      }
+      .box-2 {
+        padding: 20px;
+      }
+      .text-4 {
+        font-size: 23px;
+      }
+      .yourco {
+        width: 250px;
+        height: 55px;
+      }
+      .box-4 {
+        padding: 15px;
+        overflow: hidden;
+      }
+      .box-5 {
+        overflow: hidden;
+        padding: 15px;
+      }
+      .text-5 {
+        font-size: 20px;
+      }
+      .august {
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 280px;
+      }
+      .grow {
+        width: 180px;
+        height: 170px;
+      }
+      .box-6 {
+        padding: 20px;
+        display: flex;
+
+        align-items: center;
+      }
+      .text-6 {
+        color: white;
+        font-size: 35px;
+        margin-left: 20px;
+      }
+      .box-7 {
+        padding: 20px;
+      }
+      .number {
+        font-size: 40px;
+        font-weight: 500;
+      }
+      .audi {
+        width: 160px;
+        height: 60px;
+        margin-top: -10px;
+      }
+      .text-8 {
+        font-size: 30px;
+      }
+      .schedule {
+        margin-left: 10px;
+        margin-top: 60px;
+        width: 300px;
+      }
+      height: 250px;
+      }
+      .box-8 {
+        overflow: hidden;
+        padding-top: 30px;
+        padding: 20px;
+      }
+      .op {
+        color: hsl(256, 67%, 59%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">
+        <span class="text">
+          Create and schedule content
+          <p class="purple">quicker</p>
+        </span>
+        <img class="create" src="assets/images/illustration-create-post.webp" />
+      </div>
+      <div class="box-2">
+        <span class="text-2"> Write your content using AI </span>
+        <img class="ai" src="assets/images/illustration-ai-content.webp" />
+      </div>
+      <div class="box-3">
+        <span class="text-3">
+          Social Media <span class="yellow"> 10x</span> Faster with AI
+        </span>
+        <img class="stars" src="assets/images/illustration-five-stars.webp" />
+        <p class="gray">Over 4,000 5-star reviews</p>
+      </div>
+
+      <div class="box-4">
+        <img
+          class="yourco"
+          src="assets/images/illustration-multiple-platforms.webp"
+        />
+        <span class="text-4">Manage multiple accounts and platforms</span>
+      </div>
+      <div class="box-5">
+        <span class="text-5">Maintain a consistent posting schedule. </span>
+        <img
+          class="august"
+          src="assets/images/illustration-consistent-schedule.webp"
+        />
+      </div>
+      <div class="box-6">
+        <img
+          class="grow"
+          src="assets/images/illustration-grow-followers.webp "
+        />
+        <span class="text-6">Grow followers with non-stop content.</span>
+      </div>
+      <div class="box-7">
+        <span class="number">>56%</span>
+        <p>faster audience growth</p>
+        <img
+          class="audi"
+          src="assets/images/illustration-audience-growth.webp"
+        />
+      </div>
+      <div class="box-8">
+        <span class="text-8"> Schedule to social media.</span>
+        <img
+          class="schedule"
+          src="assets/images/illustration-schedule-posts.webp"
+        />
+        <p class="op">
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
